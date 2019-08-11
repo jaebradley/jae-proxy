@@ -11,6 +11,7 @@
   "scripts": {
     "build": "./node_modules/.bin/babel src -d build",
     "start": "node build/index.js",
+    "start:dev": "NODE_ENV=development npm run start",
     "dev": "./node_modules/.bin/nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,24 +22,27 @@
     "url": "https://github.com/jaebradley/http-request-forwarder.git"
   },
   "dependencies": {
-    "@babel/runtime": "^7.2.0",
-    "axios": "^0.18.0",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
-    "uber-estimates-client": "^2.0.0"
+    "@babel/runtime": "^7.5.5",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "uber-estimates-client": "^2.0.0",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-transform-async-to-generator": "^7.2.0",
-    "@babel/plugin-transform-regenerator": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.2.0",
-    "@babel/preset-env": "^7.2.3",
-    "eslint": "^5.11.1",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.12.0",
-    "nodemon": "^1.18.9"
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-async-to-generator": "^7.5.0",
+    "@babel/plugin-transform-regenerator": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "nodemon": "^1.19.1"
   }
 }
